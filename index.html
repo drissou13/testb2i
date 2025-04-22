@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>b2I</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz B2i</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Écran d'accueil -->
+    <div id="welcome-box">
+      <h1>🎓 Quiz B2i</h1>
+      <p>Entre ton prénom pour commencer :</p>
+      <input type="text" id="username" placeholder="Prénom">
+      <br><br>
+      <button onclick="startQuiz()">Démarrer</button>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz-box" class="hidden">
+      <div class="top-bar">
+        <div class="timer">⏱ Temps restant : <span id="timer">30</span>s</div>
+        <div class="progress">📘 Question <span id="question-number">1</span> / 15</div>
+      </div>
+      <p id="question">Chargement...</p>
+      <div id="answers"></div>
+      <button id="next-btn" disabled>Suivant</button>
+      <p id="feedback"></p>
+    </div>
+
+    <!-- Diplôme -->
+    <div id="score-box" class="hidden">
+      <h2>🎉 Félicitations <span id="name-result"></span> !</h2>
+      <p>Tu as terminé le quiz avec un score de :</p>
+      <h1><span id="final-score"></span> / 15</h1>
+      <div class="diploma">
+        <p><strong>Diplôme d'entraînement B2i</strong></p>
+        <p>Ce diplôme est décerné à :</p>
+        <h2><span id="diploma-name"></span></h2>
+        <p>Pour avoir complété un entraînement au B2i avec succès.</p>
+      </div>
+      <button onclick="restart()">Rejouer</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
